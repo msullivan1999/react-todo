@@ -13,5 +13,6 @@ code {
 }
 
 .note {
-  height: 30vh;
+  height: 15rem;
+  width: auto;
 }

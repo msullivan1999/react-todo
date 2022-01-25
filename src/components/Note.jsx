@@ -15,14 +15,14 @@ export default class note extends Component {
                 {
                     notesData.map((item, key) => {
                         return (
-                                <div key={key} className="card note col-lg-3 col-sm-5 d-flex align-items-stretch m-auto justify-content-between mt-5">
-                                    <div>
-                                        <div className="card-header">
+                                <div key={key} className="card note col-lg-3 col-sm-5 d-flex align-items-stretch m-auto justify-content-between mt-5 bg-light">
+                                    <div className="card-body">
+                                        <h5 className="card-title">
                                             {item.noteTitle}
-                                        </div>
-                                        <div className="class-body">
+                                        </h5>
+                                        <p className="card-body">
                                             {item.noteBody}
-                                        </div>
+                                        </p>
                                     </div>
                                     <div className="d-flex justify-content-between">
                                         <button className="btn btn-primary btn-sm mb-2">Edit</button>
