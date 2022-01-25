@@ -12,11 +12,11 @@ export default class note extends Component {
 
     render() {
         return(
-            <div className="row">
+            <div className="row justify-content-center">
                 {
                     notesData.map((item, key) => {
                         return (
-                                <div key={key} className="card note col-lg-3 col-md-5 col-10 d-flex align-items-stretch m-lg-4 m-md-3 m-2 justify-content-center mt-4 bg-light">
+                                <div key={key} className="card note col-lg-3 col-md-5 col-10 d-flex align-items-stretch m-lg-4 m-md-3 m-3 mt-4 bg-light">
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             {item.noteTitle}
