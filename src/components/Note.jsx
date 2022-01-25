@@ -1,31 +1,21 @@
 import React, { Component } from 'react'
+import { notesData } from '../data'
 
 export default class note extends Component {
 
-    notes = [
-        {
-            id: 1,
-            noteTitle: "this is my first note",
-            noteBody: "this is the body of my first note",
-        },
-        {
-            id: 2,
-            noteTitle: "this is my second note",
-            noteBody: "this is the body of my second note",
-        },
-        {
-            id: 3,
-            noteTitle: "another",
-            noteBody: "just to test",
-        },
-    ]
+    deleteNote() {
+    }
+
+    updateNote() {
+    }
+
     render() {
         return(
             <div className="row">
                 {
-                    this.notes.map((item, key) => {
+                    notesData.map((item, key) => {
                         return (
-                                <div key={key} className="card note col-lg-3 d-flex align-items-stretch m-auto justify-content-between">
+                                <div key={key} className="card note col-lg-3 d-flex align-items-stretch m-auto mb-5 justify-content-between">
                                     <div>
                                         <div className="card-header">
                                             {item.noteTitle}
@@ -35,8 +25,8 @@ export default class note extends Component {
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <button className="btn btn-primary">Edit</button>
-                                        <button className="btn btn-danger">Delete</button>
+                                        <button className="btn btn-primary btn-sm">Edit</button>
+                                        <button className="btn btn-danger btn-sm">Delete</button>
                                     </div>
                                 </div>
                         )
