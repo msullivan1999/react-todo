@@ -15,7 +15,7 @@ export default class note extends Component {
                 {
                     notesData.map((item, key) => {
                         return (
-                                <div key={key} className="card note col-lg-3 d-flex align-items-stretch m-auto mb-5 justify-content-between">
+                                <div key={key} className="card note col-lg-3 col-sm-5 d-flex align-items-stretch m-auto justify-content-between mt-5">
                                     <div>
                                         <div className="card-header">
                                             {item.noteTitle}
@@ -25,8 +25,8 @@ export default class note extends Component {
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-between">
-                                        <button className="btn btn-primary btn-sm">Edit</button>
-                                        <button className="btn btn-danger btn-sm">Delete</button>
+                                        <button className="btn btn-primary btn-sm mb-2">Edit</button>
+                                        <button className="btn btn-danger btn-sm mb-2">Delete</button>
                                     </div>
                                 </div>
                         )

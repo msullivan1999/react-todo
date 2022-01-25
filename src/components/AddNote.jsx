@@ -18,7 +18,7 @@ export default class addNote extends Component {
     render() {
         return (
             <div>
-                <button className='btn btn-warning btn-lg' onClick={this.createNote()}>Add Note</button>
+                <button className='btn btn-warning btn-md m-5' onClick={this.createNote()}>Add Note</button>
             </div>
         )
     }
