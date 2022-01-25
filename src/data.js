@@ -14,4 +14,9 @@ export let notesData = [
         noteTitle: "Another",
         noteBody: "Just to test",
     },
+    {
+        id: 3,
+        noteTitle: "A Fourth note",
+        noteBody: "check scaling",
+    },
 ]
