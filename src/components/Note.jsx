@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { notesData } from '../data'
+import trash from '../assets/trash.svg'
 
 export default class note extends Component {
 
@@ -26,7 +27,7 @@ export default class note extends Component {
                                     </div>
                                     <div className="d-flex justify-content-between">
                                         <button className="btn btn-primary btn-sm mb-2">Edit</button>
-                                        <button className="btn btn-danger btn-sm mb-2">Delete</button>
+                                        <button className="btn btn-danger btn-sm mb-2"><img src={trash} alt="delete"></img></button>
                                     </div>
                                 </div>
                         )
