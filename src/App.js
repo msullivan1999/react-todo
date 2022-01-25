@@ -5,10 +5,10 @@ import AddNote from './components/AddNote'
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <container>
         <Note />
         <AddNote />
-      </div>
+      </container>
     )
   }
 }
