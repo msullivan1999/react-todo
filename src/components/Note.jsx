@@ -16,7 +16,7 @@ export default class note extends Component {
                 {
                     notesData.map((item, key) => {
                         return (
-                                <div key={key} className="card note col-lg-3 col-sm-5 d-flex align-items-stretch m-auto justify-content-between mt-5 bg-light">
+                                <div key={key} className="card note col-lg-3 col-md-4 col-sm-5 d-flex align-items-stretch justify-content-center m-lg-3 m-sm-2 mt-4 bg-light">
                                     <div className="card-body">
                                         <h5 className="card-title">
                                             {item.noteTitle}

@@ -15,6 +15,7 @@ code {
 .note {
   height: 15rem;
   width: auto;
+  max-width: 50px;
 }
 
 /* .btn:active{
