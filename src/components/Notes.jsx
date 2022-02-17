@@ -37,7 +37,7 @@ export default class Notes extends Component {
         }
         let newNotes = this.state.notes.push(newNote);
         this.setState({newNotes, noteCounter: newNote.id})
-        console.log(this.state.noteCounter)
+        // console.log(this.state.noteCounter)
     }
 
     onDelete = noteID => {
@@ -45,6 +45,8 @@ export default class Notes extends Component {
         this.setState({notes})
 
     }
+
+    // add on edit funtion here
 
     render() {
         return(
