@@ -4,10 +4,12 @@ import trash from '../assets/trash.svg'
 
 export default class Note extends Component {
 
-    // constructor(props){
-    //     super(props)
-    //     this.key = props.key
-    // }
+    constructor(props){
+        super(props)
+        this.id = 5
+        this.noteBody = "this is a new note!"
+        this.noteBody = "this is the body of your new note"
+    }
 
 
     // THIS IS BROKEN - NEEDS FIXING ASAP

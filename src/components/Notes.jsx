@@ -35,7 +35,6 @@ export default class Notes extends Component {
 }
     // onAdd = () => {
     //     const Note note = new Note();
-
     // }
 
     onDelete = noteID => {
@@ -55,7 +54,7 @@ export default class Notes extends Component {
                         />
                     ))}
                     <AddNote 
-                        onAdd={this.onAdd}
+                    onAdd={this.onAdd}
                     />
             </div>
         )
