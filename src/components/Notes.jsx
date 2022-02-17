@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Note from './Note.jsx'
+import AddNote from './AddNote.jsx'
 
 export default class Notes extends Component {
 
@@ -21,19 +22,25 @@ export default class Notes extends Component {
             noteBody: "Just to test",
         },
         {
-            id: 3,
+            id: 4,
             noteTitle: "A Fourth note",
             noteBody: "check scaling",
         },
         {
-            id: 4,
+            id: 5,
             noteTitle: "A Fourth note",
             noteBody: "check scaling",
         },
     ]
 }
+    // onAdd = () => {
+    //     const Note note = new Note();
 
-    handleDelete = () => {
+    // }
+
+    onDelete = noteID => {
+        let notes = this.state.notes.filter(note => note.id !== noteID);
+        this.setState({notes})
 
     }
 
@@ -43,10 +50,13 @@ export default class Notes extends Component {
                     {this.state.notes.map(note => (
                         <Note
                         key={note.id}
-                        onDelete={this.handleDelete}
+                        onDelete={this.onDelete}
                         note={note}
                         />
                     ))}
+                    <AddNote 
+                        onAdd={this.onAdd}
+                    />
             </div>
         )
     }

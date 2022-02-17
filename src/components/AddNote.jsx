@@ -18,7 +18,7 @@ export default class addNote extends Component {
     render() {
         return (
             <div className="d-flex justify-content-center">
-                <button className='btn btn-warning btn-md m-5 shadow-none' onClick={this.createNote()}>Add Note</button>
+                <button onClick={() => this.props.onAdd()} className='btn btn-warning btn-md m-5 shadow-none' onClick={this.createNote()}>Add Note</button>
             </div>
         )
     }
