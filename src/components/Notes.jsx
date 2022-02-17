@@ -33,9 +33,15 @@ export default class Notes extends Component {
         },
     ]
 }
-    // onAdd = () => {
-    //     const Note note = new Note();
-    // }
+    onAdd = () => {
+        const newNote = {
+            id: this.state.notes.length+1,
+            noteTitle: "New Note",
+            noteBody: "What would you like to write?"
+        }
+        let newNotes = this.state.notes.push(newNote);
+        this.setState({newNotes})
+    }
 
     onDelete = noteID => {
         let notes = this.state.notes.filter(note => note.id !== noteID);
