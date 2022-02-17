@@ -3,13 +3,12 @@ import Note from './Note.jsx'
 import AddNote from './AddNote.jsx'
 
 export default class Notes extends Component {
-
     state = {
         notes: [
         {
             id: 1,
-            noteTitle: "This is my first note",
-            noteBody: "This is the body of my first note",
+            noteTitle: "This is your first note",
+            noteBody: "Add more using the button below",
         },
         {
             id: 2,
@@ -26,21 +25,19 @@ export default class Notes extends Component {
             noteTitle: "A Fourth note",
             noteBody: "check scaling",
         },
-        {
-            id: 5,
-            noteTitle: "A Fourth note",
-            noteBody: "check scaling",
-        },
-    ]
+    ],
+    noteCounter: 4
 }
+
     onAdd = () => {
         const newNote = {
-            id: this.state.notes.length+1,
+            id: this.state.noteCounter+1,
             noteTitle: "New Note",
             noteBody: "What would you like to write?"
         }
         let newNotes = this.state.notes.push(newNote);
-        this.setState({newNotes})
+        this.setState({newNotes, noteCounter: newNote.id})
+        console.log(this.state.noteCounter)
     }
 
     onDelete = noteID => {
