@@ -1,5 +1,5 @@
 # Overview
-I simple notes/todo application to practice some pbasic react js skills
+A simple notes/todo application to practice some basic react js skills
 
 # Deployment
 The current version of this application (unfinished) is deployed at https://msullivan1999.github.io/react-todo/
