@@ -9,21 +9,25 @@ export default class Notes extends Component {
             id: 1,
             noteTitle: "This is your first note",
             noteBody: "Add more using the button below",
+            edit: false,
         },
         {
             id: 2,
             noteTitle: "This is my second note",
             noteBody: "This is the body of my second note",
+            edit: false,
         },
         {
             id: 3,
             noteTitle: "Another",
             noteBody: "Just to test",
+            edit: false,
         },
         {
             id: 4,
             noteTitle: "A Fourth note",
             noteBody: "check scaling",
+            edit: false,
         },
     ],
     noteCounter: 4
@@ -46,7 +50,12 @@ export default class Notes extends Component {
 
     }
 
-    // add on edit funtion here
+    onEdit = noteID => {
+        let notes = this.state.notes
+        console.log(notes[noteID-1])
+        notes[noteID-1].edit = !notes[noteID-1].edit
+        this.setState({notes})
+    }
 
     render() {
         return(
@@ -55,6 +64,7 @@ export default class Notes extends Component {
                         <Note
                         key={note.id}
                         onDelete={this.onDelete}
+                        onEdit={this.onEdit}
                         note={note}
                         />
                     ))}
