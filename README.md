@@ -1,3 +1,10 @@
+# Overview
+A simple notes/todo application to practice some basic react js skills
+
+# Deployment
+The current version of this application (unfinished) is deployed at https://msullivan1999.github.io/react-todo/
+Currently only the create new note and delete note funtionalities are opperational. The website is fully responsive (using bootstrap)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
