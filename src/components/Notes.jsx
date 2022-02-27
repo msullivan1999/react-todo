@@ -53,7 +53,7 @@ export default class Notes extends Component {
     onEdit = noteID => {
         let notes = this.state.notes
         console.log(notes[noteID-1])
-        notes[noteID-1].edit = !notes[noteID-1].edit
+        notes.find(note => note.id === noteID).edit = !notes.find(note => note.id === noteID).edit
         this.setState({notes})
     }
 
